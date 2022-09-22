@@ -1,0 +1,23 @@
+q1
+ select *from worker
+group by salary 
+order by  salary desc limit 1,1;
+
+q2. 
+
+select *from worker
+group by salary 
+order by  salary desc limit 1,1;
+
+q3
+
+
+select *from worker where worker_id%2=0;
+
+
+q4
+select department,count(department) from worker group by department order by count(department) desc;
+
+
+q5
+select *from employee having equal salary;

@@ -1,0 +1,6 @@
+select   count(email) from customers 
+
+where customer_id =(select customer_id from
+orders 
+where order_placed_date 
+ between '2016-01-01' and '2016-12-31');
